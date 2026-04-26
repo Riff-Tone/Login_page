@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<Members>
+	<Member>
+		<UserId>1</UserId>
+		<Username>diego</Username>
+		<PasswordHash>ecd71870d1963316a97e3ac3408c9835ad8cf0f3c1bc703527c30265534f75ae</PasswordHash>
+		<BankAccountId>1001</BankAccountId>
+	</Member>
+</Members>

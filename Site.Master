@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Login_signin_page.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="<%= ResolveUrl("~/../Page10/Images/bank_browser_official.ico") %>" />
+    <title><%: Page.Title %> - Ricky Bank</title>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #222;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px 0;
+            border-top: 1px solid #ccc;
+            color: #555;
+        }
+        .logo {
+            height: 70px;
+            margin-right: 15px;
+        }
+        
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <header>
+            <div class="navbar">
+                <div class="nav-left">
+                    <a runat="server" href="~/../Page1/Login_page.aspx" class="brand">
+                        <img runat="server" src="~/../Page10/Images/bank_logo_official.png" class="logo" />
+                    </a>
+                </div>
+
+
+            </div>
+        </header>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Cse445 group 151 </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
